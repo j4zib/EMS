@@ -3,13 +3,10 @@
 >Innovaccer Summergeeks 2020 SDE-Intern Assignment.
 
 ## Tech Stack
-- HTML
-- CSS
-- Javascript
-- Python
-- SQL
-- Flask
-- MySQL
+- Flask - Backend
+- Jinja - Templating Engine
+- HTML, CSS, Javascript - Front End
+- MySQL - Database
 
 ## General Approach
 - If the Host is logged-in, then the home page will show the log of all the active visitors and the past visitors.
@@ -75,27 +72,30 @@ pyhon createTable.py
 ## Folder Structure 
 ```
 ─── EMS
-        ├── createTable.py
-        ├── dbconnect.py
-        ├── main.py
-        ├── sendMessage.py
-        ├── setup.py
-        │    
-        ├── templates
-        │    ├── checkout.html
-        │    ├── history.html
-        │    ├── home.html
-        │    ├── layout.html
-        │    ├── login.html
-        │    ├── register.html
-        │    
-        ├── static
-             ├── main.css
-             ├── main.js
-             ├── home.html
-        
+    ├── createTable.py
+    ├── dbconnect.py
+    ├── main.py
+    ├── sendMessage.py
+    ├── setup.py
+    │    
+    ├── templates
+    │    ├── checkout.html
+    │    ├── history.html
+    │    ├── home.html
+    │    ├── layout.html
+    │    ├── login.html
+    │    ├── register.html
+    │    
+    ├── static
+         ├── main.css
+         ├── main.js
+         ├── home.html    
 
 ```
+***
+## Database Structure 
+![](https://drive.google.com/uc?export=view&id=1WWNcjJOeVtiwW9BZ6x9zwzZJU57_CJjc)
+
 ***
 ## Screenshots
 | Check-in page (This is the home page if no host is not logged-in) |
@@ -118,4 +118,10 @@ pyhon createTable.py
 |-|
 | ![](https://drive.google.com/uc?export=view&id=1-ByJVUeEGxuH3Y2WcZAVL_wCwrQVrFDn) | 
 ***
+## Contributing
+1. Fork it (https://github.com/j4zib/EMS)
+2. Create your feature branch (git checkout -b feature/fooBar)
+3. Commit your changes (git commit -am 'Add some fooBar')
+4. Push to the branch (git push origin feature/fooBar)
+5. Create a new Pull Request
 
