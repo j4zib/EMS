@@ -97,15 +97,15 @@ python main.py
 ![](https://drive.google.com/uc?export=view&id=1WWNcjJOeVtiwW9BZ6x9zwzZJU57_CJjc)
 ***
 ## Demo
-'''
 http://j4zib.pythonanywhere.com/
-'''
+
 >NOTE: Email and SMS APIs are disabled to prevent spam.
+
 Sample Host Details:
 - Name: Niko Bellic
 - E-mail: niko@example.com
 - Password: 1234
-
+<br>
 - Name: Little Jacob
 - E-mail: littlejacob@example.com
 - Password: 1234
