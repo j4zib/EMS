@@ -105,7 +105,7 @@ Sample Host Details:
 - Name: Niko Bellic
 - E-mail: niko@example.com
 - Password: 1234
-<br>
+<br />
 - Name: Little Jacob
 - E-mail: littlejacob@example.com
 - Password: 1234
