@@ -9,14 +9,15 @@ import time
 from flask_mail import Mail, Message
 import smtplib
 from sendMessage import getClient
+from setup import EMAIL_SERVER, EMAIL_ID, EMAIL_PASS, EMAIL_PORT, TWILIO_NUMBER
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '24a92cbc4352146a46e0c61b51a13dca'
-app.config['MAIL_SERVER']='smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'yourId@gmail.com'
-app.config['MAIL_PASSWORD'] = 'YOUR PASSWORD HERE'
+app.config['MAIL_SERVER'] = EMAIL_SERVER
+app.config['MAIL_PORT'] = EMAIL_PORT
+app.config['MAIL_USERNAME'] = EMAIL_ID
+app.config['MAIL_PASSWORD'] = EMAIL_PASS
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 bcrypt = Bcrypt(app)
@@ -61,7 +62,7 @@ def home():
             number = f"+91{details[4]}"
             try:
                 mail = Mail(app)
-                msg = Message('Visitor Details', sender = 'yourId@gmail.com', recipients = [recEmail[0]])
+                msg = Message('Visitor Details', sender = EMAIL_ID, recipients = [recEmail[0]])
                 msg.body = f"Name: {firstName} {lastName}\nE-mail: {email}\nPhone: {phoneNo}\nCheck-in: {tme}"
                 print(msg.body)
                 mail.send(msg)
@@ -72,7 +73,7 @@ def home():
                 message = client.messages \
                     .create(
                         body=f"Name: {firstName} {lastName}\nE-mail: {email}\nPhone: {phoneNo}\nCheck-in: {tme}",
-                        from_='+12564149142',
+                        from_=TWILIO_NUMBER,
                         to=number
                     )
                 print(message.sid)
@@ -118,7 +119,7 @@ def checkout():
             checkIn = details[6]
             try:
                 mail = Mail(app)
-                msg = Message('Visitor Details', sender = 'testEmail@gmail.com', recipients = [email])
+                msg = Message('Visitor Details', sender = EMAIL_ID, recipients = [email])
                 msg.body = f"Name: {firstName} {lastName}\nE-mail: {email}\nPhone: {phoneNo}\nCheck-in: {checkIn}\nCheck-out: {tme}"
                 print(msg.body)
                 mail.send(msg)
