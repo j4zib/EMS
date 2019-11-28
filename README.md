@@ -1,6 +1,6 @@
 
 # Entry Management Software
->Innovaccer Summergeeks 2020 SDE-Intern Assignment.
+>Innovaccer SDE-Intern Assignment.
 
 ## Tech Stack
 - Flask - Backend
