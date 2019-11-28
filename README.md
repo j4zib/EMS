@@ -102,13 +102,12 @@ http://j4zib.pythonanywhere.com/
 >NOTE: Email and SMS APIs are disabled to prevent spam.
 
 Sample Host Details:
-- Name: Niko Bellic
-- E-mail: niko@example.com
-- Password: 1234
-<br />
-- Name: Little Jacob
-- E-mail: littlejacob@example.com
-- Password: 1234
+- Host: Niko Bellic
+  - E-mail: niko@example.com
+  - Password: 1234
+- Host: Little Jacob
+  - E-mail: littlejacob@example.com
+  - Password: 1234
 ***
 ## Screenshots
 | Check-in page (This is the home page if no host is not logged-in) |
