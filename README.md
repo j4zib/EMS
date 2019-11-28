@@ -34,8 +34,8 @@ Security and Caution
 ## Installation
 - Clone the repository using `git clone` and then change the directory to root of the project
 ``` 
-    git clone https://github.com/j4zib/EMS.git
-    cd EMS
+git clone https://github.com/j4zib/EMS.git
+cd EMS
 ```
 - It is recommended to create a virtual environment.
 - Install all the dependencies
@@ -65,7 +65,7 @@ pyhon createTable.py
 ```
 - Run the server using:
 ```
-> python main.py
+python main.py
 ```
 
 ***
