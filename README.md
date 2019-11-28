@@ -102,12 +102,16 @@ pyhon createTable.py
 |-|
 | ![new](https://drive.google.com/uc?export=view&id=1mrFXEj-V20-gTki9rw4pxS8HvyYRCnKc) |
 | Check-out page |
+|-|
 | ![](https://drive.google.com/uc?export=view&id=1s5q_ARr2uAwJ88Eo8SK5EfMyvrBLXets) | 
 | Host Registration Page |
+|-|
 | ![](https://drive.google.com/uc?export=view&id=1mAk-vUMXjWuwlO5oRNMY2EU69siEb3FL) | 
 | Host Login Page |
+|-|
 | ![](https://drive.google.com/uc?export=view&id=1BYWzKQhA9KBqm-yxitlDwKnw3hWG66T8) | 
 | History page (This is the home page if a host is logged-in) |
+|-|
 | ![](https://drive.google.com/uc?export=view&id=1-ByJVUeEGxuH3Y2WcZAVL_wCwrQVrFDn) | 
 ***
 
