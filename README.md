@@ -98,9 +98,8 @@ pyhon createTable.py
 ```
 ***
 ## Screenshots
-||
-|-|
 | Check-in page (This is the home page if no host is not logged-in) |
+|-|
 | ![new](https://drive.google.com/uc?export=view&id=1mrFXEj-V20-gTki9rw4pxS8HvyYRCnKc) |
 | Check-out page |
 | ![](https://drive.google.com/uc?export=view&id=1s5q_ARr2uAwJ88Eo8SK5EfMyvrBLXets) | 
