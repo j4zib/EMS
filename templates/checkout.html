@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card">
+	<h5 class="card-header bg-steel white-text text-center py-4">
+		<strong>Check-out</strong>
+	</h5>
+
+	<!--Card content-->
+	<div class="card-body px-lg-5 pt-1">
+
+		<!-- Form -->
+		<form method='POST' action="{{ url_for('checkout') }}">
+
+			<!-- E-mail -->
+			<div class="md-form">
+				<input type="email" id="materialRegisterFormEmail" class="form-control" name="email">
+				<label for="materialRegisterFormEmail">E-mail</label>
+			</div>
+
+			<button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Check-out</button>
+
+		</form>
+		<!-- Form -->
+
+	</div>
+
+</div>
+
+{% endblock content %}

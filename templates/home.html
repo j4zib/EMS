@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card">
+	<h5 class="card-header bg-steel white-text text-center py-4">
+		<strong>Check-in</strong>
+	</h5>
+
+	<!--Card content-->
+	<div class="card-body px-lg-5 pt-1">
+
+		<!-- Form -->
+		<form method='POST' action="{{ url_for('home') }}">
+			<div class="form-row">
+				<div class="col">
+					<!-- First name -->
+					<div class="md-form">
+						<input type="text" id="materialRegisterFormFirstName" class="form-control" name="firstName">
+						<label for="materialRegisterFormFirstName">First name</label>
+					</div>
+				</div>
+				<div class="col">
+					<!-- Last name -->
+					<div class="md-form">
+						<input type="text" id="materialRegisterFormLastName" class="form-control" name="lastName">
+						<label for="materialRegisterFormLastName">Last name</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- E-mail -->
+			<div class="md-form mt-0">
+				<input type="email" id="materialRegisterFormEmail" class="form-control" name="email">
+				<label for="materialRegisterFormEmail">E-mail</label>
+			</div>
+
+
+			<!-- Phone number -->
+			<div class="md-form">
+				<input type="tel" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock" name="phoneNo">
+				<label for="materialRegisterFormPhone">Phone number</label>
+			</div>
+			<div class="md-form">
+				<select class="browser-default custom-select" name="dropdown">
+					<option selected value="-1">Choose the Host</option>
+					{% for i in data %}
+					<option value="{{ i[0] }}">{{ i[1] + ' ' + i[2]  }}</option>
+					{% endfor %}
+				</select>
+			</div>
+
+			<button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Check-in</button>
+
+		</form>
+		<!-- Form -->
+
+	</div>
+
+</div>
+
+{% endblock content %}
